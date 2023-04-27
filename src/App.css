@@ -16,6 +16,19 @@ body {
   font-family: var(--type-second);
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1b1c1e;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #6f43c2;
+  border-radius: 20px;
+}
+
 ul,
 li {
   list-style: none;
@@ -29,7 +42,7 @@ img {
 }
 
 .container {
-  max-width: 60rem;
+  max-width: 65rem;
   padding: 20px;
   margin: 40px auto;
 
@@ -39,5 +52,18 @@ img {
 
   @media (max-width: 990px) {
     max-width: 45rem;
+  }
+}
+
+.animeLeft {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.3s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    opacity: 1;
+    transform: initial;
   }
 }

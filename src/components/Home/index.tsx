@@ -4,7 +4,7 @@ import * as C from "./styles";
 
 export const Home = () => {
   return (
-    <C.Container className="container">
+    <C.Container className="container animeLeft">
       <C.AboutContainer>
         <h1>Olá, meu nome é David</h1>
         <p>Sou Desenvolvedor Front-end especializado em React</p>

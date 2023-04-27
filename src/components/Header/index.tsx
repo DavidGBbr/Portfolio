@@ -7,6 +7,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineMessage,
 } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const [mobilemenu, setMobilemenu] = useState(false);
@@ -26,16 +27,16 @@ export const Header = () => {
         )}
         <ul className={mobilemenu ? "navMobileActive" : ""}>
           <li>
-            <a href="#">
+            <Link to="/">
               <AiOutlineHome />
               <span>Home</span>
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/about">
               <AiOutlineUser />
               <span>Sobre</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">
