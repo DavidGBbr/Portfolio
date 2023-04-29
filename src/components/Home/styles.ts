@@ -1,11 +1,15 @@
 import styled from "styled-components";
 import { AiOutlineDownload } from "react-icons/ai";
 
-export const Container = styled.div`
+export const Container = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: calc(100vh - 146px);
+
+  @media (max-width: 720px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `;
 
 export const DeveloperImg = styled.img`
@@ -49,7 +53,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const LinkLogo = styled(AiOutlineDownload)`
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 `;
 
 export const LinkDownload = styled.a`

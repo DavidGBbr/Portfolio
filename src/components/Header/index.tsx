@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as C from "./styles";
 import { useMedia } from "../../Hooks/useMedia";
 import {
@@ -7,11 +7,16 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineMessage,
 } from "react-icons/ai";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
   const [mobilemenu, setMobilemenu] = useState(false);
   const mobile = useMedia("(max-width: 56rem)");
+
+  const { pathname } = useLocation();
+  useEffect(() => {
+    setMobilemenu(false);
+  }, [pathname]);
 
   return (
     <C.Header>
@@ -39,10 +44,10 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/projects">
               <AiOutlineFundProjectionScreen />
               <span>Projetos</span>
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#">
