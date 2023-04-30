@@ -11,18 +11,19 @@ export const ContainerProjects = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
 `;
 
 export const CardProjetct = styled.div`
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   border-radius: 20px;
   background: #3d3f44;
   padding: 1.25rem;
-  width: 25rem;
-  height: 500px;
+  max-width: 25rem;
   transition: 0.7s;
   box-shadow: 0 4px 5px 3px rgba(111, 67, 194, 0.459);
+  margin: 0 auto;
 
   :hover {
     box-shadow: 0 8px 10px 6px rgba(111, 67, 194, 0.7);
@@ -31,25 +32,21 @@ export const CardProjetct = styled.div`
 
   img {
     border-radius: 5px;
-    width: 400px;
-    height: 200px;
+    width: 100%;
     margin: 0 auto;
   }
 
-  h3 {
-    padding: 12px 0px;
+  div.aboutProject {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
   }
 
-  p {
-    padding-bottom: 12px;
-  }
-
-  div {
-    position: absolute;
-    bottom: 1.25rem;
-    width: calc(100% - 40px);
+  div.dataProject {
     display: flex;
     justify-content: space-between;
+    gap: 10px;
   }
 
   a {
@@ -64,5 +61,38 @@ export const CardProjetct = styled.div`
       transform: scale(1.05);
       background-color: #8445cc;
     }
+  }
+
+  @media (max-width: 540px) {
+    width: 80%;
+
+    div {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    a {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    p {
+      font-size: 0.9rem;
+    }
+  }
+`;
+
+export const Button = styled.button`
+  color: #9b57ff;
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 33px;
+  font-weight: bold;
+  transition: 0.5s;
+
+  :hover {
+    font-size: 50px;
   }
 `;
