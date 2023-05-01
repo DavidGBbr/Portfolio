@@ -13,24 +13,24 @@ export const Projects = () => {
       title: "Gelateria Artesanal",
       description:
         "Página de uma sorveteria artesanal feita em React sendo 100% responsiva",
-      codeUrl: "",
-      projectUrl: "",
+      codeUrl: "https://github.com/DavidGBbr/Gelateria",
+      projectUrl: "https://gelateria-alpha.vercel.app/",
     },
     {
       image: ImgDogs,
       title: "Dogs",
       description:
         "Rede social de cachorros criada com TypeScript e react, utilizando uma API externa juntamente com uma biblioteca de gráficos",
-      codeUrl: "",
-      projectUrl: "",
+      codeUrl: "https://github.com/DavidGBbr/Dogs",
+      projectUrl: "https://dogs-navy.vercel.app/",
     },
     {
       image: ImgFinance,
       title: "Finance Controller",
       description:
         "Sistema de Gestão financeira criado com React, react-icons e styled-components. Nele também foi implementado o uso de estados globais utilizando Context Api",
-      codeUrl: "",
-      projectUrl: "",
+      codeUrl: "https://github.com/DavidGBbr/Sistema-de-gestao-financeira",
+      projectUrl: "https://finance-controller.vercel.app/",
     },
   ];
 

@@ -41,6 +41,12 @@ img {
   max-width: 100%;
 }
 
+.title {
+  color: rgb(155, 87, 255);
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
 .container {
   min-height: calc(100vh - 212px);
   max-width: 65rem;

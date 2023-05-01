@@ -50,10 +50,10 @@ export const Header = () => {
             </Link>
           </li>
           <li>
-            <a href="#">
+            <Link to="/contact">
               <AiOutlineMessage />
               <span>Contato</span>
-            </a>
+            </Link>
           </li>
         </ul>
       </C.Nav>
