@@ -57,7 +57,7 @@ export const LinkLogo = styled(AiOutlineDownload)`
 `;
 
 export const LinkDownload = styled.a`
-  margin-top: 40px;
+  margin-top: 20px;
   color: #fff;
   text-decoration: none;
   border: 3px solid #6f43c2;
